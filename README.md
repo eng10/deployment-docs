@@ -110,6 +110,10 @@ sudo systemctl enable postgresql
 sudo -i -u postgres
 ```
 ```
+ CREATE DATABASE databaseName;
+```
+```
+
 
 CREATE ROLE userName;
 ALTER ROLE userName WITH ENCRYPTED PASSWORD 'userPassword';
