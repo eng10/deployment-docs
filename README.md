@@ -107,17 +107,18 @@ sudo systemctl start postgresql
 sudo systemctl enable postgresql
 ```
 ```
-sudo -i -u postgres
+sudo -u postgres psql
+
 ```
 ```
  CREATE DATABASE databaseName;
 ```
 ```
+ALTER USER postgres WITH PASSWORD 'new_password';
 
-
-CREATE ROLE userName;
-ALTER ROLE userName WITH ENCRYPTED PASSWORD 'userPassword';
-GRANT ALL PRIVILEGES ON DATABASE databaseName TO userName;
+```
+```
+sudo systemctl restart postgresql
 
 ```
 
